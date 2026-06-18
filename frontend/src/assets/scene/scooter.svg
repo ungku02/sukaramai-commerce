@@ -1,0 +1,43 @@
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Wheels -->
+    <circle cx="110" cy="190" r="25" fill="#290505"/>
+    <circle cx="260" cy="190" r="25" fill="#290505"/>
+
+    <!-- Scooter Body -->
+    <path
+        d="M110 160
+        H220
+        L250 130
+        H290
+        L260 170
+        H110
+        Z"
+        fill="#290505"
+    />
+
+    <!-- Boy -->
+    <circle cx="200" cy="90" r="18" fill="#290505"/>
+
+    <path
+        d="M185 110
+        L220 145
+        L205 155
+        L175 120
+        Z"
+        fill="#290505"
+    />
+
+    <!-- Girl -->
+    <circle cx="150" cy="100" r="16" fill="#290505"/>
+
+    <path
+        d="M135 115
+        L175 145
+        L155 155
+        L120 125
+        Z"
+        fill="#290505"
+    />
+
+</svg>

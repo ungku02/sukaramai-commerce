@@ -1,0 +1,79 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Far Mountains -->
+    <path
+        d="M0 720
+        C120 650 180 670 260 620
+        C340 570 450 620 540 590
+        C640 560 760 640 860 600
+        C980 550 1100 620 1220 590
+        C1340 560 1500 620 1620 580
+        C1740 540 1840 590 1920 560
+        V1080
+        H0
+        Z"
+        fill="#4A0D0D"
+        opacity="0.35"
+    />
+
+    <!-- Mid Mountains -->
+    <path
+        d="M0 790
+        C150 740 260 770 360 730
+        C500 680 650 760 780 720
+        C940 670 1100 770 1260 730
+        C1420 690 1600 760 1760 720
+        C1840 700 1880 710 1920 700
+        V1080
+        H0
+        Z"
+        fill="#3D0909"
+        opacity="0.5"
+    />
+
+    <!-- Lake -->
+    <rect
+        x="0"
+        y="780"
+        width="1920"
+        height="300"
+        fill="#2E0606"
+        opacity="0.3"
+    />
+
+    <!-- Water Reflections -->
+    <path
+        d="M120 860 H420"
+        stroke="#7A1518"
+        stroke-width="3"
+        opacity="0.2"
+    />
+
+    <path
+        d="M220 900 H580"
+        stroke="#7A1518"
+        stroke-width="3"
+        opacity="0.2"
+    />
+
+    <path
+        d="M320 950 H700"
+        stroke="#7A1518"
+        stroke-width="3"
+        opacity="0.15"
+    />
+
+    <!-- Foreground Ground -->
+    <path
+        d="M0 920
+        C250 850 450 920 700 870
+        C950 820 1200 930 1500 860
+        C1700 820 1800 850 1920 820
+        V1080
+        H0
+        Z"
+        fill="#290505"
+        opacity="0.9"
+    />
+
+</svg>
