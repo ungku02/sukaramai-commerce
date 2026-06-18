@@ -123,13 +123,14 @@ export default function MenuBanner() {
       </svg>
 
       <div className="relative z-20 mx-auto max-w-[1400px]">
+     <div className="justify-items-center">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#F0E5D1]/15 bg-[#F0E5D1]/12 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#F0E5D1] backdrop-blur-xl sm:px-4 sm:text-xs sm:tracking-[0.22em]">
             <Sparkles size={14} />
             Signature Pour
           </div>
 
-          <h2 className="font-serif text-[clamp(2.7rem,6vw,4.75rem)] leading-none text-[#F0E5D1]">
+          <h2 className="font-serif mb-5 text-[clamp(2.7rem,6vw,4.75rem)] leading-none text-[#F0E5D1]">
             Comfort cups,
             <br className="hidden sm:block" />
             made for lingering.
@@ -139,9 +140,28 @@ export default function MenuBanner() {
             Three easy favourites for slow nights, shared tables, and the kind
             of plans that happen naturally.
           </p>
-        </div>
+        </div></div>
 
-        <div className="mx-auto mt-10 grid max-w-[1080px] justify-center gap-x-7 gap-y-10 sm:mt-12 md:grid-cols-[repeat(2,minmax(0,320px))] lg:grid-cols-[repeat(3,minmax(0,320px))] lg:gap-x-8 lg:gap-y-12">
+      <div
+  className="
+    mx-auto
+    mt-10
+
+    grid
+
+    grid-cols-2
+    gap-4
+
+    justify-items-center
+
+    sm:grid-cols-2
+    md:grid-cols-2
+    lg:grid-cols-3
+
+    max-w-[1080px]
+  "
+>
+   
           {featuredMenu.map((item) => (
             <CoffeeCard
               key={item.name}

@@ -41,16 +41,36 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="fixed left-1/2 top-4 z-50 w-[calc(100%-1rem)] max-w-fit -translate-x-1/2 sm:top-5 lg:top-6">
+    <div
+      className="
+    fixed
+
+    left-1/2
+    top-3
+
+    z-50
+
+    w-auto
+
+    -translate-x-1/2
+
+    sm:top-4
+    lg:top-6
+  "
+    >
       <div
         className="
                 mx-auto
                 flex items-center justify-center gap-1
-                px-2 py-2
+                px-2 px-1.5 py-1.5
+
+                sm:px-2
+                sm:py-2
+
+                lg:px-3
+                lg:py-3-2
                 sm:gap-1.5
-                sm:px-2.5 sm:py-2.5
                 lg:gap-2
-                lg:px-3 lg:py-3
                 rounded-full
                 bg-white/10
                 backdrop-blur-xl
@@ -61,9 +81,13 @@ export default function Navbar() {
         {/* Logo */}
         <div
           className="
-    h-9 w-9
-    sm:h-10 sm:w-10
-    lg:h-12 lg:w-12
+  h-8 w-8
+
+sm:h-9
+sm:w-9
+
+lg:h-12
+lg:w-12
     rounded-full
     overflow-hidden
 
@@ -90,11 +114,15 @@ export default function Navbar() {
               onClick={() => scrollToSection(item.id)}
               className={`
                     flex items-center justify-center
-                    h-9
-                    w-9
-                    sm:h-10
-                    sm:w-10
-                    md:w-11
+                    h-8
+                    w-8
+
+                    sm:h-9
+                    sm:w-9
+
+                    md:h-10
+                    md:w-10
+
                     lg:h-12
                     lg:w-auto
                     lg:px-4
@@ -122,7 +150,16 @@ export default function Navbar() {
                   }}
                 />
               ) : (
-                <Icon className="h-4 w-4 sm:h-[17px] sm:w-[17px] lg:h-[18px] lg:w-[18px]" />
+                <Icon
+                  className="h-3.5
+                    w-3.5
+
+                    sm:h-4
+                    sm:w-4
+
+                    lg:h-[18px]
+                    lg:w-[18px]"
+                />
               )}
 
               {/* {active === item.id && (
@@ -135,10 +172,15 @@ export default function Navbar() {
         <button
           className="
                     ml-1
-                    h-9 w-9
-                    sm:h-10 sm:w-10
-                    lg:ml-2
-                    lg:h-12 lg:w-12
+                   h-8
+                    w-8
+
+                    sm:h-9
+                    sm:w-9
+
+                    lg:h-12
+                    lg:w-12
+                                        
                     rounded-full
 
                     bg-[#942323]

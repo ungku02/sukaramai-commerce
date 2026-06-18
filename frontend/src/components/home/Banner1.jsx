@@ -11,6 +11,7 @@ export default function Banner1() {
       className="
         relative
         overflow-hidden
+        mt-[-4px]
 
       
 

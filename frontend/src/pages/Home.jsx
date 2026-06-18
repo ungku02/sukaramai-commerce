@@ -10,16 +10,15 @@ import Footer from "../components/Footer";
 
 export default function Home() {
     return (
-      <div className="min-h-screen bg-[#F6F0E8]">
+      <div className="min-h-screen overflow-x-hidden bg-[#F6F0E8]">
         <HeroSection />
-            <Navbar />
-            <Banner1 />   
-            <MenuBanner />
-            <Banner3 /> <AboutBanner />
-            <ContactBanner /> 
-            <Banner2 />
-          <Footer />
-     
+        <Navbar />
+        <Banner1 />
+        <MenuBanner />
+        <Banner3 /> <AboutBanner />
+        <ContactBanner />
+        <Banner2 />
+        <Footer />
       </div>
     );
 }

@@ -14,8 +14,8 @@ export default function HeroSection() {
       id="home"
       className="
         relative
-     min-h-[100svh]
-sm:min-h-[600px]
+    h-[100svh]
+md:min-h-[700px]
 lg:min-h-screen
         overflow-hidden
         bg-gradient-to-br
@@ -47,10 +47,14 @@ lg:min-h-screen
   bottom-0
   left-0
 
-  w-full
-  min-w-[900px]
+ w-full
 
-  md:min-w-0
+scale-[1.3]
+sm:scale-[1.15]
+md:scale-100
+
+origin-bottom
+
 
   h-auto
 "
@@ -96,6 +100,7 @@ lg:min-h-screen
           }}
           className="
 absolute
+hidden md:block
 
 bottom-[90px]
 right-[-10px]
@@ -208,37 +213,34 @@ lg:w-[400px]
 
       <div
         className="
-  relative
-  z-10
+    relative
+    z-10
 
-  min-h-[100svh]
-  sm:min-h-[700px]
-  lg:min-h-screen
+    h-[100svh]
 
-  flex
-  flex-col
+    flex
+    flex-col
 
-  items-center
-  justify-start
+    justify-center
+    items-center
 
-  text-center
+    text-center
 
-  px-5
+    px-5
 
-  pt-[6rem]
-  pb-28
-
-  sm:px-6
-  sm:pt-[7rem]
-  sm:pb-32
-
-  md:pt-32
-  md:pb-40
-
-  lg:pt-[9rem]
-"
+    md:h-auto
+    md:min-h-[700px]
+    md:justify-start
+    md:pt-32
+    md:pb-40
+  "
       >
-        <div className="mx-auto max-w-4xl">
+        <div
+          className="mx-auto max-w-[320px]
+sm:max-w-xl
+md:max-w-2xl
+lg:max-w-4xl"
+        >
           {/* Badge */}
 
           <motion.div
@@ -303,11 +305,12 @@ lg:w-[400px]
             className="
               font-serif
               text-[#F0E5D1]
-text-[48px]
-sm:text-[60px]
+text-[36px]
+leading-[0.95]
+
+sm:text-[52px]
 md:text-[72px]
 lg:text-[92px]
-leading-[0.9]
               mb-4
               sm:mb-5
             "
@@ -331,21 +334,21 @@ leading-[0.9]
               duration: 0.8,
             }}
             className="
-              text-[#F0E5D1]/80
+text-[#F0E5D1]/80
 
-             text-sm
+text-[14px]
 sm:text-base
 md:text-lg
 
-              leading-relaxed
+leading-7
 
-             max-w-[320px]
-sm:max-w-xl
-md:max-w-2xl
-              mx-auto
-              mb-6
-              sm:mb-8
-            "
+max-w-[280px]
+sm:max-w-md
+md:max-w-xl
+lg:max-w-2xl
+
+mx-auto
+"
           >
             Born from late-night rides, unexpected conversations, and a feeling
             worth remembering.
@@ -398,15 +401,17 @@ sm:mt-7
 
                 flex
                 items-center
+                justify-center
+
                 gap-2
 
                 hover:scale-105
 
                 transition-all
-                w-full
-max-w-[280px]
+              w-[220px]
 
 sm:w-auto
+
               "
             >
               Explore Menu
@@ -433,8 +438,7 @@ sm:w-auto
                 hover:bg-white/15
 
                 transition-all
-                w-full
-max-w-[280px]
+w-[220px]
 
 sm:w-auto
               "
@@ -450,13 +454,13 @@ sm:w-auto
       <svg
         className="
        absolute
-    bottom-[-3px]
+    bottom-[-8px]
     left-0
     block
 
 
     w-full
-    h-[82px]
+    h-[100px]
     sm:h-[110px]
     lg:h-[150px]
 
