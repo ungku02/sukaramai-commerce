@@ -145,7 +145,11 @@ export default function MenuBanner() {
       <div
   className="
     mx-auto
+
     mt-10
+    sm:mt-10
+    md:mt-10
+    lg:mt-10
 
     grid
 
