@@ -132,7 +132,7 @@ lg:w-12
                     ${
                       active === item.id
                         ? "bg-[#721111] text-[#F0E5D1] shadow-lg"
-                        : "text-[#4D1414]/80 hover:bg-[#F0E5D1]"
+                        : "text-[#4D1414] hover:bg-[#F0E5D1]"
                     }
                 `}
             >
