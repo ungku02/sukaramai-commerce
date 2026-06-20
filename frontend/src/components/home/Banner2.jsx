@@ -4,138 +4,115 @@ import Pistachio from "./../../assets/drinks/pistachio.png";
 import { motion } from "framer-motion";
 
 const categories = [
-  {
-    icon: Coffee,
-    label: "Kopi",
-  },
-  {
-    icon: MoonStar,
-    label: "Signature",
-  },
-  {
-    icon: Milk,
-    label: "Latte",
-  },
-  {
-    icon: CupSoda,
-    label: "Chilled",
-  },
-  {
-    icon: Sparkles,
-    label: "Seasonal",
-  },
+  { icon: Coffee, label: "Kopi" },
+  { icon: MoonStar, label: "Signature" },
+  { icon: Milk, label: "Latte" },
+  { icon: CupSoda, label: "Chilled" },
+  { icon: Sparkles, label: "Seasonal" },
 ];
 
 export default function Banner2() {
   return (
     <div
       className="
-    relative
-    overflow-hidden
-    bg-gradient-to-br
-    from-[#6C0200]
-    via-[#681a1a]
-    to-[#8d393b]
-  "
+        relative
+        overflow-hidden
+        bg-gradient-to-br
+        from-[#6C0200]
+        via-[#681a1a]
+        to-[#8d393b]
+      "
     >
       {/* Top Coffee Foam Divider */}
-
       <svg
         className="
-    absolute
+          absolute
+          top-0
+          left-0
 
-    top-
-    left-0
+          w-full
 
-    w-full
+          h-[50px]
+          sm:h-[70px]
+          md:h-[100px]
 
-    h-[100px]
-    lg:h-[100px]
+          z-[5]
 
-    z-[5]
-
-    rotate-180
-  "
+          rotate-180
+        "
         viewBox="0 0 1920 250"
         preserveAspectRatio="none"
       >
         <path
           d="
-      M0 130
-      C150 60 350 180 520 120
-      C700 60 900 180 1080 120
-      C1260 60 1460 180 1680 120
-      C1800 90 1880 110 1920 90
-
-      L1920 250
-      L0 250
-      Z
-    "
+            M0 130
+            C150 60 350 180 520 120
+            C700 60 900 180 1080 120
+            C1260 60 1460 180 1680 120
+            C1800 90 1880 110 1920 90
+            L1920 250
+            L0 250
+            Z
+          "
           fill="#F6F0E8"
         />
       </svg>
-      {/* Glow */}
 
+      {/* Glow */}
       <div
         className="
-      absolute
+          absolute
+          left-1/2
+          top-0
+          -translate-x-1/2
 
-      left-1/2
-      top-0
+          w-[320px]
+          h-[180px]
+          sm:w-[450px]
+          sm:h-[240px]
+          md:w-[600px]
+          md:h-[300px]
 
-      -translate-x-1/2
+          rounded-full
 
-      w-[600px]
-      h-[300px]
+          bg-[#F0E5D1]/10
 
-      rounded-full
-
-      bg-[#F0E5D1]/10
-
-      blur-[120px]
-    "
+          blur-[120px]
+        "
       />
 
       <div
         className="
-      relative
-      z-20
+          relative
+          z-20
 
-      mx-auto
-      max-w-6xl
+          mx-auto
+          max-w-6xl
 
-      px-5
-      py-14
+          px-4
+          sm:px-6
+          md:px-8
 
-      text-center
+          py-10
+          sm:py-12
+          md:py-14
 
-      sm:px-8
-    "
+          text-center
+        "
       >
         {/* Journey Trails */}
-
         <svg
-          className="
-    absolute
-    inset-0
-
-    h-full
-    w-full
-
-    opacity-[0.08]
-
-    pointer-events-none
-  "
+          className="absolute inset-0 h-full w-full opacity-[0.08] pointer-events-none"
           viewBox="0 0 1440 700"
+          preserveAspectRatio="none"
         >
           {/* Main Trail */}
-
           <path
             d="
-      M-100 180
-      C250 20 350 320 700 170
-      C1000 40 1200 260 1540 100
-    "
+              M-100 180
+              C250 20 350 320 700 170
+              C1000 40 1200 260 1540 100
+            "
             stroke="#F0E5D1"
             strokeWidth="2"
             fill="none"
@@ -144,13 +121,12 @@ export default function Banner2() {
           />
 
           {/* Lower Trail */}
-
           <path
             d="
-      M-100 420
-      C250 300 450 520 760 390
-      C1000 300 1250 500 1540 360
-    "
+              M-100 420
+              C250 300 450 520 760 390
+              C1000 300 1250 500 1540 360
+            "
             stroke="#F0E5D1"
             strokeWidth="2"
             fill="none"
@@ -158,184 +134,196 @@ export default function Banner2() {
           />
 
           {/* Vertical Curl */}
-
           <path
             d="
-      M250 -50
-      C350 100 220 180 340 300
-      C450 420 420 560 580 700
-    "
+              M250 -50
+              C350 100 220 180 340 300
+              C450 420 420 560 580 700
+            "
             stroke="#F0E5D1"
             strokeWidth="1.5"
             fill="none"
             strokeLinecap="round"
           />
         </svg>
-        {/* Badge */}
 
+        {/* Badge */}
         <div
           className="
-        mb-5
+            mb-4
+            sm:mb-5
 
-        inline-flex
-        items-center
-        gap-2
+            mt-6
+            sm:mt-8
+            md:mt-10
 
-        rounded-full
+            inline-flex
+            items-center
+            gap-2
 
-        border
-        border-white/10
+            rounded-full
 
-        bg-white/10
+            border
+            border-white/10
 
-        backdrop-blur-xl
+            bg-white/10
 
-        px-4
-        py-2
-        mt-10
+            backdrop-blur-xl
 
-        text-[11px]
-        font-semibold
-        text-center
+            px-3
+            sm:px-4
+            py-1.5
+            sm:py-2
 
-        uppercase
-        tracking-[0.25em]
+            text-[9px]
+            sm:text-[11px]
+            font-semibold
+            text-center
 
-        text-[#F0E5D1]
-      "
+            uppercase
+            tracking-[0.2em]
+            sm:tracking-[0.25em]
+
+            text-[#F0E5D1]
+          "
         >
-          <Sparkles size={14} />
+          <Sparkles size={13} />
           Cozy Menu Trail
         </div>
 
         {/* Heading */}
-
         <h2
           className="
-        font-serif
+            font-serif
 
-        text-[#F0E5D1]
+            text-[#F0E5D1]
 
-        text-[clamp(2.5rem,5vw,4.5rem)]
+            text-[clamp(2rem,9vw,4.5rem)]
+            sm:text-[clamp(2.5rem,6vw,4.5rem)]
 
-        leading-none
-      "
+            leading-none
+          "
         >
           Cozy Cups Await
         </h2>
 
         {/* Description */}
-
         <p
           className="
-    
-    mt-5
+            mt-4
+            sm:mt-5
 
-    
+            mx-auto
 
-    text-center
+            max-w-md
+            sm:max-w-none
 
-    text-base
-    md:text-lg
+            text-center
 
-    leading-relaxed
+            text-sm
+            sm:text-base
+            md:text-lg
 
-    text-[#F0E5D1]/75
-  "
+            leading-relaxed
+
+            text-[#F0E5D1]/75
+          "
         >
           A warm little pause before the menu. Familiar flavours, soft
-          <br></br>
-          sweetness, and drinks made for slow Sukaramai nights.
+          <br className="hidden sm:block" /> sweetness, and drinks made for slow
+          Sukaramai nights.
         </p>
 
         {/* Categories */}
-
         <div
           className="
-        mx-auto
-        mt-10
+            mx-auto
+            mt-8
+            sm:mt-10
 
-        grid
+            grid
 
-        max-w-5xl
+            max-w-5xl
 
-        grid-cols-2
-        gap-x-4
-        gap-y-6
+            grid-cols-2
+            gap-x-3
+            sm:gap-x-4
+            gap-y-5
+            sm:gap-y-6
 
-        sm:grid-cols-3
-        md:grid-cols-5
-      "
+            sm:grid-cols-3
+            md:grid-cols-5
+          "
         >
           {categories.map((item) => {
             const Icon = item.icon;
 
             return (
-              <div
-                key={item.label}
-                className="
-              flex
-              flex-col
-              items-center
-            "
-              >
+              <div key={item.label} className="flex flex-col items-center">
                 {/* Icon */}
-
                 <div
                   className="
-                mb-3
+                    mb-2
+                    sm:mb-3
 
-                flex
-                h-14
-                w-14
+                    flex
+                    h-11
+                    w-11
+                    sm:h-12
+                    sm:w-12
+                    md:h-14
+                    md:w-14
 
-                items-center
-                justify-center
+                    items-center
+                    justify-center
 
-                rounded-full
+                    rounded-full
 
-                border
-                border-white/10
+                    border
+                    border-white/10
 
-                bg-white/10
+                    bg-white/10
 
-                backdrop-blur-xl
+                    backdrop-blur-xl
 
-                text-[#F0E5D1]
+                    text-[#F0E5D1]
 
-                shadow-[0_10px_30px_rgba(0,0,0,0.15)]
+                    shadow-[0_10px_30px_rgba(0,0,0,0.15)]
 
-                transition-all
-                duration-300
+                    transition-all
+                    duration-300
 
-                hover:scale-110
-              "
+                    hover:scale-110
+                  "
                 >
-                  <Icon size={22} />
+                  <Icon size={18} className="sm:size-5 md:size-[22px]" />
                 </div>
 
                 {/* Label */}
-
                 <div
                   className="
-                rounded-full
+                    rounded-full
 
-                bg-[#F0E5D1]
+                    bg-[#F0E5D1]
 
-                px-4
-                py-2
+                    px-3
+                    sm:px-4
+                    py-1.5
+                    sm:py-2
 
-                text-[11px]
+                    text-[9px]
+                    sm:text-[11px]
 
-                font-semibold
+                    font-semibold
 
-                uppercase
-                tracking-[0.15em]
+                    uppercase
+                    tracking-[0.1em]
+                    sm:tracking-[0.15em]
 
-                text-[#721111]
+                    text-[#721111]
 
-                shadow-lg
-              "
+                    shadow-lg
+                  "
                 >
                   {item.label}
                 </div>
@@ -344,6 +332,7 @@ export default function Banner2() {
           })}
         </div>
       </div>
+
       {/* Main Cup */}
       <motion.img
         src={Bluebery}
@@ -358,18 +347,24 @@ export default function Banner2() {
           ease: "easeInOut",
         }}
         className="
-    absolute
+          absolute
 
-    right-[-40px]
-    top-[190px]
+          right-[-20px]
+          top-[60px]
+          sm:right-[-30px]
+          sm:top-[100px]
+          md:right-[-40px]
+          md:top-[190px]
 
-    h-[320px]
-    md:h-[420px]
+          h-[140px]
+          sm:h-[220px]
+          md:h-[320px]
+          lg:h-[420px]
 
-    pointer-events-none
+          pointer-events-none
 
-    z-[2]
-  "
+          z-[2]
+        "
       />
 
       {/* Second Cup */}
@@ -386,53 +381,60 @@ export default function Banner2() {
           ease: "easeInOut",
         }}
         className="
-    absolute
+          absolute
 
-    right-[120px]
-    top-[250px]
+          right-[55px]
+          top-[90px]
+          sm:right-[80px]
+          sm:top-[140px]
+          md:right-[120px]
+          md:top-[250px]
 
-    h-[220px]
-    md:h-[280px]
+          h-[95px]
+          sm:h-[150px]
+          md:h-[220px]
+          lg:h-[280px]
 
-    rotate-[-18deg]
+          rotate-[-18deg]
 
-    opacity-90
+          opacity-90
 
-    pointer-events-none
+          pointer-events-none
 
-    z-[1]
-  "
+          z-[1]
+        "
       />
-      <div className="mb-10"></div>
+
+      <div className="mb-8 sm:mb-10" />
+
       <svg
         className="
-       absolute
-    bottom-[-3px]
-    left-0
-    block
+          absolute
+          bottom-[-3px]
+          left-0
+          block
 
+          w-full
+          h-[60px]
+          sm:h-[82px]
+          md:h-[110px]
+          lg:h-[150px]
 
-    w-full
-    h-[82px]
-    sm:h-[110px]
-    lg:h-[150px]
-
-    z-[20]
-  "
+          z-[20]
+        "
         viewBox="0 0 1920 250"
         preserveAspectRatio="none"
       >
         <path
           d="
-      M0 180
-      C300 120 450 220 700 150
-      C900 90 1200 220 1500 140
-      C1700 90 1820 140 1920 100
-
-      L1920 250
-      L0 250
-      Z
-    "
+            M0 180
+            C300 120 450 220 700 150
+            C900 90 1200 220 1500 140
+            C1700 90 1820 140 1920 100
+            L1920 250
+            L0 250
+            Z
+          "
           fill="#F6F0E8"
         />
       </svg>
