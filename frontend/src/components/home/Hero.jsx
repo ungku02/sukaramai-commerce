@@ -8,6 +8,17 @@ import Scooter from "./../../assets/scene/scooter.png";
 import Moon from "./../../assets/scene/moon.svg";
 import Stars from "./../../assets/scene/stars.svg";
 
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+}
+
 export default function HeroSection() {
   return (
     <section
@@ -40,7 +51,7 @@ lg:min-h-screen
             y: 0,
           }}
           transition={{
-            duration: 1,
+            duration: 0.3,
           }}
           className="
   absolute
@@ -71,8 +82,8 @@ origin-bottom
             opacity: 0.6,
           }}
           transition={{
-            delay: 1,
-            duration: 1,
+            delay: 0.3,
+            duration: 0.3,
           }}
           className="
             absolute
@@ -95,8 +106,8 @@ origin-bottom
             scale: 1,
           }}
           transition={{
-            delay: 2,
-            duration: 0.8,
+            delay: 0.4,
+            duration: 0.4,
           }}
           className="
 absolute
@@ -132,8 +143,8 @@ lg:w-[220px]
             opacity: 1,
           }}
           transition={{
-            delay: 2.8,
-            duration: 0.8,
+            delay: 0.4,
+            duration: 0.4,
           }}
           className="
 absolute
@@ -169,8 +180,8 @@ lg:w-[180px]
             opacity: 1,
           }}
           transition={{
-            delay: 3.2,
-            duration: 0.8,
+            delay: 0.5,
+            duration: 0.5,
           }}
           className="
 absolute
@@ -253,7 +264,7 @@ lg:max-w-4xl"
               y: 0,
             }}
             transition={{
-              delay: 4,
+              delay: 0.6,
               duration: 0.6,
             }}
             className="
@@ -299,7 +310,7 @@ lg:max-w-4xl"
               y: 0,
             }}
             transition={{
-              delay: 4.2,
+              delay: 0.6,
               duration: 0.8,
             }}
             className="
@@ -330,7 +341,7 @@ lg:text-[92px]
               opacity: 1,
             }}
             transition={{
-              delay: 4.5,
+              delay: 0.6,
               duration: 0.8,
             }}
             className="
@@ -366,7 +377,7 @@ mx-auto
               y: 0,
             }}
             transition={{
-              delay: 4.8,
+              delay: 0.6,
               duration: 0.8,
             }}
             className="
@@ -386,6 +397,7 @@ sm:mt-7
 "
           >
             <button
+              onClick={() => scrollToSection("menu")}
               className="
                 bg-[#F0E5D1]
                 text-[#5A0F12]
@@ -419,6 +431,7 @@ sm:w-auto
             </button>
 
             <button
+              onClick={() => scrollToSection("about")}
               className="
                 bg-white/10
                 backdrop-blur-xl

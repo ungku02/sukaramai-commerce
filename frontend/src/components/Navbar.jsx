@@ -1,8 +1,11 @@
 import { ShoppingBag, Coffee, BookOpen, House, MapPin } from "lucide-react";
 import LogoSukaramai from "./../assets/logos/logo-sukaramai.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [active, setActive] = useState("home");
 
   const scrollToSection = (id) => {
@@ -192,7 +195,10 @@ lg:w-12
                     transition
                 "
         >
-          <ShoppingBag className="h-4 w-4 sm:h-[17px] sm:w-[17px] lg:h-[18px] lg:w-[18px]" />
+          <ShoppingBag
+            onClick={() => navigate("/login")}
+            className="h-4 w-4 sm:h-[17px] sm:w-[17px] lg:h-[18px] lg:w-[18px]"
+          />
         </button>
       </div>
     </div>
